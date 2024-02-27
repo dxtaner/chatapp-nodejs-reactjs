@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# JavaScript Based Chat Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project aims to create a simple chat application using JavaScript. It provides an interface to facilitate communication between users.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+These steps include the basic setup required to start the project in a local environment.
 
-### `npm start`
+1. **Clone the Project:** 
+    ```
+    git clone [https://github.com/dxtaner/sohbet-uygulamasi.git](https://github.com/dxtaner/chatapp-nodejs-reactjs/edit/main/chatapp-react)
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Navigate to the Project Directory:**
+    ```
+    cd sohbet-uygulamasi
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Install Required Dependencies:**
+    ```
+    npm install
+    ```
 
-### `npm test`
+4. **Start the Application:**
+    ```
+    npm start
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **View in the Browser:**
+   Visit `http://localhost:3000` in your browser to view the application.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This chat application provides a simple interface. Once loaded, users can perform the following actions:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Create a new chat.
+- Select an existing chat.
+- Send and quote messages.
+- View the last sent messages.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## WebSocket Client Functions
 
-### `npm run eject`
+This file contains client functions used to establish WebSocket communication.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Functions
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **initWebSocket:** Used to initiate the WebSocket connection.
+- **sendMessage:** Used to send messages.
+- **subscribeChat:** Used to listen to live chat.
+- **subscribeInitialMessages:** Used to receive initial messages.
+- **disconnectWebSocket:** Used to disconnect the WebSocket connection.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+These functions are used to manage WebSocket communication in the chat application. The usage on the client side is quite simple. Each function has its specific purpose, and detailed information about usage can be found in the relevant sections within the application.
 
-## Learn More
+## Contributions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you'd like to contribute or suggest any improvements, please feel free to submit a PR (Pull Request). We'd be happy to have your contributions!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the MIT License. For more information, see the [LICENSE](./LICENSE) file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Author
 
-### Analyzing the Bundle Size
+- **dxtaner** - [GitHub](https://github.com/dxtaner)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
